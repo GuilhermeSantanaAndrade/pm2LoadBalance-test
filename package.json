@@ -1,0 +1,20 @@
+{
+  "name": "api-teste",
+  "version": "1.0.0",
+  "description": "Api Teste pm2 LoadBalance",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "cross-env NODE_ENV=dev pm2 start ./src/server.js --name api-teste -i 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {}
+}
